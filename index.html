@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 簡單範例</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">我的網站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 輪播 Carousel -->
+    <div class="carousel-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- 第一個輪播項目 -->
+                <div class="carousel-item active">
+                    <a href="https://youtu.be/-kZBuzsZ7Ho?list=PLKmlerQYH964z8Uee12vxhhb8H8rep3pU" target="_blank">
+                        <img src="https://media1.tenor.com/m/Y5ACfA6nJxkAAAAC/soyo-nagasaki-bang-dream-it%E2%80%99s-mygo.gif"
+                            class="d-block full-width-img" alt="第一張圖片">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>春日影</h5>
+                        <p>MyGO!!!!!</p>
+                    </div>
+                </div>
+                <!-- 第二個輪播項目 -->
+                <div class="carousel-item">
+                    <a href="https://youtu.be/m0dr4UEKoog?list=PLKmlerQYH964z8Uee12vxhhb8H8rep3pU" target="_blank">
+                        <img src="https://media1.tenor.com/m/hEuFgSPTSF8AAAAC/mygo-tomori.gif"
+                            class="d-block full-width-img" alt="第二張圖片">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>栞</h5>
+                        <p>MyGO!!!!!</p>
+                    </div>
+                </div>
+                <!-- 第三個輪播項目 -->
+                <div class="carousel-item">
+                    <a href="https://youtu.be/qPv7-zXpq4M?list=PLUFFl4hYd1R0k5Suh9PpR2o11mQ7Rxz0y" target="_blank">
+                        <img src="https://media1.tenor.com/m/rFhTPTn8yn4AAAAC/mygo-%E6%84%9B%E9%9F%B3.gif"
+                            class="d-block full-width-img" alt="第三張圖片">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>迷星叫</h5>
+                        <p>MyGO!!!!!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">上一張</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">下一張</span>
+            </button>
+        </div>
+    </div>
+
+    <style>
+        .carousel-container {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* 防止溢出 */
+        }
+
+        .full-width-img {
+            width: 100vw;
+            /* 寬度充滿整個視窗 */
+            height: auto;
+            /* 高度自動調整，保持圖片比例 */
+            display: block;
+            /* 確保不會有額外的空隙 */
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* 防止橫向滾動條出現 */
+        }
+    </style>
+
+    <!-- 主要內容 -->
+    <div class="container mt-5">
+        <br>
+        <h1 class="text-center ">我的作品集</h1>
+        <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://thumb.ac-illust.com/95/953d2e166d4f5c2b79f39c257e881876_t.jpeg"
+                        class="card-img-top uniform-img no-select" alt="圖片1">
+                    <div class="card-body">
+                        <h5 class="card-title no-select">剪刀石頭布</h5>
+                        <a href="https://50915122zheng.github.io/0918-50915122/" class="btn btn-primary">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.ctee.com.tw/newsphoto/2021-01-23/1024/20210123700167.jpg"
+                        class="card-img-top uniform-img no-select" alt="圖片2">
+                    <div class="card-body">
+                        <h5 class="card-title no-select">記憶大考驗</h5>
+                        <a href="https://50915122zheng.github.io/1009-50915122/" class="btn btn-success">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2021/05/22/11/38/yt-6273367_960_720.png"
+                        class="card-img-top uniform-img no-select" alt="圖片3">
+                    <div class="card-body">
+                        <h5 class="card-title no-select">YT影片</h5>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                            class="btn btn-danger">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .uniform-img {
+                width: 100%;
+                /* 使圖片寬度充滿卡片 */
+                height: 200px;
+                /* 設置統一的高度 */
+                object-fit: cover;
+                /* 保持圖片比例，裁切多餘部分 */
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .no-select {
+                user-select: none;
+                /* 禁止文本选择 */
+            }
+        </style>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- 關於我們區塊 -->
+    <section id="about" class="mt-5">
+        <h1><i class="bi bi-person-circle"></i> 關於我</h1>
+        <p>尊敬的各位，您好！我叫廖御証，目前在霍格華茲擔任學生，專注於黑魔法。我擁有榮譽騎士、屠龍勇士和死靈法師的成就，並且在迷宮探險方面積累了豐富的經驗。
+
+            在我的職業生涯中，我參與了多個魔王討伐活動，這些經歷讓我能夠深入理解行業的趨勢和挑戰。我擅長領域展開、反轉術式，並且致力於將創新思維與實踐相結合，提升戰鬥效率和成果。
+
+            未來，我希望能夠在世界和平方面持續發展，為提瓦特大陸的發展貢獻自己的力量。感謝您撥冗聆聽，希望能與各位建立更深入的合作與交流。</p>
+    </section>
+
+    <style>
+        #about {
+            background-color: #f8f9fa;
+            /* 淺灰色背景 */
+            padding: 40px;
+            /* 添加內部填充 */
+            border-radius: 10px;
+            /* 圓角 */
+        }
+
+        #about h1 {
+            font-size: 2.5rem;
+            /* 增大標題字體 */
+            color: #343a40;
+            /* 深色字體 */
+            border-bottom: 2px solid #343a40;
+            /* 深色分隔線 */
+            padding-bottom: 10px;
+            /* 分隔線下方填充 */
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            /* 調整段落字體 */
+            line-height: 1.6;
+            /* 增加行間距 */
+        }
+
+        .hidden-text {
+            opacity: 0;
+            /* 初始透明度为 0 */
+            visibility: hidden;
+            /* 隐藏文本 */
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            /* 添加过渡效果 */
+        }
+
+        /* 当鼠标悬停时 */
+        #about p:hover .hidden-text {
+            opacity: 1;
+            /* 变为完全可见 */
+            visibility: visible;
+            /* 确保文本可见 */
+        }
+    </style>
+
+    <!-- 聯絡我們區塊 -->
+    <section id="contact" class="mt-5">
+        <div class="container">
+            <h1 class="text-center mb-4">聯絡我</h1>
+            <div class="card p-4 shadow">
+                <p class="text-center">如果你有任何問題或建議，歡迎隨時與我們聯絡：</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>電子郵件：50915122@gm.nfu.edu.tw</span>
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>電話：05-6315000</span>
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>地址：632雲林縣虎尾鎮文化路64號</span>
+                    </li>
+                </ul>
+                <div class="text-center mb-4">
+                    <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+
+                <!-- 聯絡表單 -->
+                <h5>發送消息</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="請輸入你的姓名">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">電子郵件</label>
+                        <input type="email" class="form-control" id="email" placeholder="請輸入你的電子郵件">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">訊息</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="請輸入你的訊息"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">發送</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <p>© 2024 我的網站 | 版權所有</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
